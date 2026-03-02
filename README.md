@@ -22,3 +22,5 @@ Bueno  primero esto es un fork, con el motivo de hacer una documentación en esp
 ¡NO ESTAMOS RESPALDADO POR THEFUNKINCREW Y POR NINGUNO DE SUS INTEGRANTES!
 
 El creador de este fork, tampoco quiere traer malas "compañias" (como el mismo) para los creadores, así que este repositorio solo será "informativo" y hecho con cariño, y todos los créditos a sus respectivos autores
+
+## [¡Puedes leer nuestra Traducción en éste enlace!](https://neonexploreroficial.github.io/funkin-modding-docs/)
