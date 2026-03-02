@@ -1,4 +1,4 @@
-# Friday Night Funkin' Modding Documentation
+# Documentación de Modding de Friday Night Funkin'
 
 This is an officially written and maintained documentation resource by The Funkin' Crew Inc. for 
 modding **Friday Night Funkin'**.
