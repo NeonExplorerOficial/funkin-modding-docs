@@ -7,5 +7,5 @@ title = "Documentación de Modding de Friday Night Funkin'"
 
 
 [output.html]
-git-repository-url = "https://github.com/NeonExplorerOficial/funkin-modding-docs.github.io"
-edit-url-template = "https://github.com/FunkinCrew/funkin-modding-docs/edit/main/{path}"
+git-repository-url = "https://neonexploreroficial.github.io/funkin-modding-docs/"
+edit-url-template = "https://github.com/NeonExplorerOficial/funkin-modding-docs/edit/main/{path}"
