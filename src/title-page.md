@@ -1,7 +1,11 @@
-# Friday Night Funkin' Modding Documentation
+# Documentación de Modding de Friday Night Funkin' 
 
-This is an officially written and maintained documentation resource by The Funkin' Crew Inc. for 
-modding **Friday Night Funkin'**.
+Esta es una documentación oficialmente escrita por The Funkin Crew Inc. (Documentación en inglés, pero esta documentación en español NO ES OFICIAL)
+para el Modding **Friday Night Funkin'**.
 
-# Documentation Source Code
-The source files from which this book is generated can be found on [GitHub](https://github.com/FunkinCrew/funkin-modding-docs).
+# Código fuente de la Documentación
+Los archivos fuentes por los cuales este Libro fue generado se encuentran en [GitHub](https://github.com/FunkinCrew/funkin-modding-docs).
+---------
+# Extra - Código Fuente de la Traducción
+
+Los archivos o el Código fuente de esta traducción lo puedes encontrar también en [GitHub]{(https://github.com/NeonExplorerOficial/funkin-modding-docs)
