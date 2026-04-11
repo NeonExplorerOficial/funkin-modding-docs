@@ -1,13 +1,13 @@
-# The Metadata File
+# El archivo de metadatos
 
-To start, create a new folder within your `mods` folder. This is where your mod's assets and scripts will live. Next, create a new text file, and change its name to `_polymod_meta.json`. Make sure you didn't accidentally name it `_polymod_meta.json.txt`!
+Para empezar, crea una nueva carpeta dentro de tu carpeta `mods`. Aquí es donde se almacenarán los recursos y los scripts de tu mod. A continuación, crea un nuevo archivo de texto y cámbiale el nombre a `_polymod_meta.json`. ¡Asegúrate de no haberlo llamado por error `_polymod_meta.json.txt`!
 
-Inside this file, we will put the information the game needs in order to learn about your mod. I recommend doing this with a program like [Visual Studio Code](https://code.visualstudio.com/), it will correct you if you accidentally misplace a comma or something.
+Dentro de este archivo, pondremos la información que el juego necesita para conocer tu mod. Te recomiendo hacerlo con un programa como [Visual Studio Code](https://code.visualstudio.com/), ya que te corregirá si colocas mal una coma o algo por el estilo.
 
 ```json
 {
   "title": "Intro Mod",
-  "description": "An introductory mod.",
+  "description": "Un mod introductorio.",
   "contributors": [
     {
       "name": "EliteMasterEric"
@@ -25,27 +25,27 @@ Inside this file, we will put the information the game needs in order to learn a
 }
 ```
 
-`_polymod_meta.json` has the following fields:
+`_polymod_meta.json` tiene los siguientes campos:
 
-- `title`: A readable name for the mod.
-- `description`: A readable description for the mod.
-- `contributors`: A list of Contributor objects.
-- `homepage`: A URL where users can learn more about your mod.
-- `dependencies`: A map of mod IDs which are mandatory dependencies, along with their version numbers.
-  - These are the mods which must also be loaded in order for this mod to load.
-  - If the mod is not included, it will fail.
-  - The mod list will be reordered such that dependencies load first.
-- `optionalDependencies`: A map of mod IDs which are optional dependencies, along with their version numbers.
-  - These mods do not necessarily need to be installed for this mod to load, but they will still force the mod list to be reordered so that the dependencies load before this mod.
-- `api_version`: A version number used to determine if mods are compatible with your copy of Funkin'. Change this to the version number for Friday Night Funkin' that you want to support, preferably the latest one (`0.6.3` at time of writing.).
-- `mod_version`: A version number specifically for your mod. Choose any version or leave it at `1.0.0`.
-- `license`: The license your mod is distributed under. [Pick one from here](https://opensource.org/licenses) or just leave it as `Apache-2.0`.
+- `title`: Un nombre legible para el mod.
+- `description`: Una descripción legible del mod.
+- `contributors`: Una lista de objetos Contributor.
+- `homepage`: Una URL donde los usuarios pueden obtener más información sobre tu mod.
+- `dependencies`: Un mapa de ID de mods que son dependencias obligatorias, junto con sus números de versión.
+  - Estos son los mods que también deben cargarse para que este mod se cargue.
+  - Si el mod no está incluido, fallará.
+  - La lista de mods se reordenará de manera que las dependencias se carguen primero.
+- `optionalDependencies`: Un mapa de ID de mods que son dependencias opcionales, junto con sus números de versión.
+  - No es necesario que estos mods estén instalados para que este mod se cargue, pero sí obligarán a reordenar la lista de mods para que las dependencias se carguen antes que este mod.
+- `api_version`: Un número de versión utilizado para determinar si los mods son compatibles con tu copia de Funkin'. Cambia esto por el número de versión de Friday Night Funkin' que quieras admitir, preferiblemente la más reciente (`0.6.3` en el momento de escribir este artículo).
+- `mod_version`: Un número de versión específico para tu mod. Elige cualquier versión o déjalo en `1.0.0`.
+- `license`: La licencia bajo la que se distribuye tu mod. [Elige una de aquí](https://opensource.org/licenses) o déjala como `Apache-2.0`.
 
-A Contributor has the following fields:
+Un colaborador tiene los siguientes campos:
 
-- `name`: The contributor's name.
-- `role`: *(optional)* The role the contributor played, for example "Artist" or "Programmer"
-- `email`: *(optional)* A contact email
-- `url`: *(optional)* A homepage URL
+- `name`: El nombre del colaborador.
+- `role`: *(opcional)* El papel que desempeñó el colaborador, por ejemplo, «Artista» o «Programador»
+- `email`: *(opcional)* Un correo electrónico de contacto
+- `url`: *(opcional)* La URL de una página web
 
-Many of these fields are intended to be used in the future by an upcoming Mod Menu interface, which will allow users to organize their mods.
+Muchos de estos campos están pensados para ser utilizados en el futuro por una próxima interfaz de menú de mods, que permitirá a los usuarios organizar sus modsr
