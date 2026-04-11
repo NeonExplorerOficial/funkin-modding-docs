@@ -17,7 +17,7 @@ This work is licensed under CC BY-SA 4.0. To view a copy of this license, visit 
 
 # ¿Qué es este proyecto?
 
-Bueno  primero esto es un fork, con el motivo de hacer una documentación en español, será actualizado cada vez que el repositorio original sea actualizado, y si es posible, se añadiran cosas que el original aún no, me gustaría recalcar lo siguiente....
+Bueno  primero esto es un fork, con el motivo de hacer una documentación en español, será actualizado cada vez que el repositorio original sea actualizado, y si es posible, se añadiran cosas que el original aún no (creo), y para aumentar las chances, o aumentar la fidelidad, se usa el traductor de DeepL (Y se verifica la traducción por hablantes nativos), además, me gustaría recalcar lo siguiente....
 
 ¡NO ESTAMOS RESPALDADO POR THEFUNKINCREW Y POR NINGUNO DE SUS INTEGRANTES!
 
