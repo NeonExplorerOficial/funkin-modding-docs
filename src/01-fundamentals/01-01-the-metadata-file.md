@@ -48,4 +48,4 @@ Un colaborador tiene los siguientes campos:
 - `email`: *(opcional)* Un correo electrónico de contacto
 - `url`: *(opcional)* La URL de una página web
 
-Muchos de estos campos están pensados para ser utilizados en el futuro por una próxima interfaz de menú de mods, que permitirá a los usuarios organizar sus modsr
+Muchos de estos campos están pensados para ser utilizados en el futuro por una próximo menú de selección de mods, que permitirá a los usuarios organizar sus modsr
