@@ -1,4 +1,4 @@
-# Creación de un Chart
+# Creando un Chart
 
 Para crear un chart, accede a la herramienta «Chart Editor». En el juego, puedes encontrarla en el menú «Debug» del menú principal (asignada a `~` por defecto). También puedes acceder a ella añadiendo una tecla de acceso rápido para «Debug Chart» en el menú de opciones (no asignada por defecto) y, a continuación, pulsando la tecla asignada mientras reproduces una canción.
 
