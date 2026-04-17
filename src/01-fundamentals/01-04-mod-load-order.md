@@ -1,7 +1,7 @@
-# Mod Load Order
+# Orden de carga de los mods
 
-You may wonder what happens in the case where multiple mods provide a given file.
+Quizás te preguntes qué ocurre cuando varios mods proporcionan un mismo archivo.
 
-The answer is simple; mod order matters. If you have two mods installed which replace a particular asset, the mod which loads last will get precedence over mods that get loaded earlier, similar to Minecraft's resource pack system. This is evaluated on a per-file basis, so if Mod A replaces Pico and GF and Mod B replaces only GF, and Mod B is loaded after Mod A, you'll see the Pico from Mod A and the Girlfriend from Mod B.
+La respuesta es sencilla: el orden de los mods es importante. Si tienes instalados dos mods que sustituyen un recurso concreto, el mod que se cargue en último lugar tendrá prioridad sobre los mods que se hayan cargado antes, de forma similar al sistema de paquetes de recursos de Minecraft. Esto se evalúa archivo por archivo, por lo que si el mod A sustituye a Pico y a GF y el mod B sustituye solo a GF, y el mod B se carga después del mod A, verás al Pico del mod A y a la Girlfriend del mod B.
 
-In the current version of Friday Night Funkin', there is no accessible means of altering mod load order. Mods will load in alphabetical order by default, with dependencies being loaded first.
+En la versión actual de Friday Night Funkin', no hay ninguna forma accesible de modificar el orden de carga de los mods. Los mods se cargarán por defecto en orden alfabético, cargándose primero las dependencias.
