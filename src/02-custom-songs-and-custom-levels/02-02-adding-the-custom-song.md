@@ -1,4 +1,4 @@
-# Añadir la canción personalizada
+# Añadiendo una canción ersonalizada
 
 Al final de [Creando un Chart](02-01-creating-a-chart.md) aprendimos que los archivos `.fnfc` no son más que archivos `.zip`, por lo que basta con cambiarles el nombre y descomprimirlos. Una vez que tengamos estos archivos, solo tenemos que colocarlos en las ubicaciones correctas dentro de nuestra carpeta del mod.
 
