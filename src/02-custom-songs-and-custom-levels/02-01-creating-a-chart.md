@@ -1,16 +1,16 @@
-# Creating a Chart
+# Creación de un Chart
 
-To create a chart, access the Chart Editor tool. This can be found in-game by accessing the Debug menu from the main menu (this is bound to `~` by default). You can also access it by adding a keybind for "Debug Chart" in the options menu (not bound by default), then pressing the bound key while playing a song.
+Para crear un chart, accede a la herramienta «Chart Editor». En el juego, puedes encontrarla en el menú «Debug» del menú principal (asignada a `~` por defecto). También puedes acceder a ella añadiendo una tecla de acceso rápido para «Debug Chart» en el menú de opciones (no asignada por defecto) y, a continuación, pulsando la tecla asignada mientras reproduces una canción.
 
-From here, you can create a new chart from audio files, import one from an older version of the game, or build a chart from existing in-game chart data.
+Desde aquí, puedes crear un nuevo chart partir de archivos de audio, importar una de una versión anterior del juego o crear un chart a partir de datos de partituras existentes en el juego.
 
-Detailed use of the chart editor deserves its own guide, but the basic should be fairly intuitive. For now, let's assume you've made a chart of your favorite song, and want to turn it into a mod people can play.
+El uso detallado del Chart Editor merece su propia guía, pero lo básico debería ser bastante intuitivo. Por ahora, supongamos que has creado un chart de tu canción favorita y quieres convertirla en un mod que la gente pueda jugar.
 
-## Dissecting Your FNFC File
+## Desmontando tu archivo FNFC
 
-When you save your chart, the game packages it up into a `.fnfc` file, which makes it easy to share with other charters and collaborate. It includes the audio for the song, along with the note data and some metadata files to go with it.
+Cuando guardas tu chart, el juego la empaqueta en un archivo `.fnfc`, lo que facilita compartirla con otros creadores de charts (charters) y colaborar. Incluye el audio de la canción, junto con los datos de las notas y algunos archivos de metadatos que lo acompañan.
 
-To add the song to our mod, we need to get that info out. This is fairly easy, because an FNFC file is actually secretly a ZIP file! Rename your `mychart.fnfc` to `mychart.zip`, replacing the file extension so that your operating system recognizes it as a ZIP, and extract it to reveal its contents, which will be something like:
+Para añadir la canción a nuestro mod, necesitamos extraer esa información. Esto es bastante fácil, ¡porque un archivo FNFC es en realidad, en secreto, un archivo ZIP! Cambia el nombre de tu `mychart.fnfc` a `mychart.zip`, sustituyendo la extensión del archivo para que tu sistema operativo lo reconozca como un ZIP, y extráelo para revelar su contenido, que será algo así:
 
 ```
 -manifest.json
