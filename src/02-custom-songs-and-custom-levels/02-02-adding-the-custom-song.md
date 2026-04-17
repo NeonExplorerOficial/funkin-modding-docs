@@ -1,12 +1,12 @@
-# Adding The Custom Song
+# Añadir la canción personalizada
 
-At the end of [Creating A Chart](02-01-creating-a-chart.md) we learned that `.fnfc` files were just `.zip` archives, so we can simply rename it and unzip it. Once we have thse files, we just need to put them in the correct spots in our mod folder!
+Al final de [Creando un Chart](02-01-creating-a-chart.md) aprendimos que los archivos `.fnfc` no son más que archivos `.zip`, por lo que basta con cambiarles el nombre y descomprimirlos. Una vez que tengamos estos archivos, solo tenemos que colocarlos en las ubicaciones correctas dentro de nuestra carpeta del mod.
 
-- The `manifest.json` file can be discarded, our mod won't need it.
-- The `metadata.json` and `chart.json` files need to go into the `data/songs/<songid>` folder, replacing `<songid>` with the internal name for our song.
-- The OGG files need to go into `songs/<songid>`, again replacing `<songid>` with the internal name of our song.
+- El archivo `manifest.json` se puede descartar, nuestro mod no lo necesitará.
+- Los archivos `metadata.json` y `chart.json` deben ir a la carpeta `data/songs/<songid>`, sustituyendo `<songid>` por el nombre interno de nuestra canción.
+- Los archivos OGG deben ir en `songs/<songid>`, sustituyendo de nuevo `<songid>` por el nombre interno de nuestra canción.
 
-We'll end up with something like this.
+El resultado final será algo así.
 
 ```
 -mods
@@ -24,11 +24,11 @@ We'll end up with something like this.
    |-_polymod_meta.json
 ```
 
-When the game starts, it queries the list of available songs by looking in the `data/songs` folder for `<songid>/<songid>-metadata.json` files, which it then uses to find the chart file and the requisite song files. Neat! But right now, if you boot up the game, this doesn't do anything. You'll see it mentioned in the logs with no complaints, but it's not playable in Story Mode or Freeplay, what gives?
+Cuando se inicia el juego, consulta la lista de canciones disponibles buscando en la carpeta `data/songs` los archivos `<songid>/<songid>-metadata.json`, que luego utiliza para encontrar el archivo de la lista y los archivos de canciones necesarios. ¡Genial! Pero ahora mismo, si inicias el juego, esto no hace nada. Verás que aparece mencionado en los registros sin errores, pero no se puede reproducir en el Modo Historia ni en el Modo Libre, ¿qué pasa?
 
 ```
-source/funkin/play/song/Song.hx:579: Fetching song metadata for mychart
-source/funkin/data/song/SongRegistry.hx:103:   Loaded entry data: Song(mychart)
+source/funkin/play/song/Song.hx:579: Obteniendo metadatos de la canción para mychart
+source/funkin/data/song/SongRegistry.hx:103:   Datos de entrada cargados: Song(mychart)
 ```
 
-The fix is simple; every song must be part of a Story Mode level to appear in Freeplay.
+La solución es sencilla: todas las canciones deben formar parte de un nivel del Modo Historia para aparecer en el Modo Libre.
