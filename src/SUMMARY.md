@@ -6,7 +6,7 @@
 - [Lo Fundamental](01-fundamentals/01-00-fundamentals.md)
     - [El Archivo Metadata](01-fundamentals/01-01-the-metadata-file.md)
     - [Cargando el mod dentro del juego](01-fundamentals/01-02-loading-the-mod-in-game.md)
-    - [Reemplazamiento y agregación de recursos](01-fundamentals/01-03-asset-replacement-and-additions.md)
+    - [Sustitución y adicción de recursos](01-fundamentals/01-03-asset-replacement-and-additions.md)
     - [Orden de carga de mods](01-fundamentals/01-04-mod-load-order.md)
     - [Re-cargado "Rápido" (Hot es Caliente, originalmente se llama Hot Reloading)](01-fundamentals/01-05-hot-reloading.md)
     - [Conclusión del capítulo](01-fundamentals/01-06-chapter-conclusion.md)
