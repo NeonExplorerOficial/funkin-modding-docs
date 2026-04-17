@@ -1,10 +1,10 @@
-# Adding a Custom Level
+# Añadir un nivel personalizado
 
-Add a new file, with whatever internal name you like, into your mods folder, under the `data/levels/` directory, with the `.json` file extension.
+Añade un nuevo archivo, con el nombre interno que prefieras, a tu carpeta de mods, dentro del directorio `data/levels/`, con la extensión `.json`.
 
-*NOTE*: Keep in mind that if your internal name is the same as a week from the base game, or of another mod, they will overlap each other and you may have unexpected results!
+*NOTA*: Ten en cuenta que si tu nombre interno coincide con el de una semana del juego base o con el de otro mod, se solaparán entre sí y podrías obtener resultados inesperados.
 
-We'll end up with something like this.
+El resultado final será algo así:
 
 ```
 -mods
@@ -28,15 +28,15 @@ We'll end up with something like this.
    |-_polymod_meta.json
 ```
 
-Your custom week's JSON file will look something like the following:
+El archivo JSON de tu semana personalizada tendrá un aspecto similar al siguiente:
 
 ```json
 {
   "version": "1.0.0",
-  "name": "MY CUSTOM WEEK",
+  "name": "MI SEMANA PERSONALIZADA",
   "titleAsset": "storymenu/titles/myweek",
   "background": "#F9CF51",
-  "songs": ["mychart"],
+  "songs": ["michart"],
   "visible": true,
   "props": [
     {
@@ -72,16 +72,16 @@ Your custom week's JSON file will look something like the following:
 }
 ```
 
-There's a lot of info here! Let's break it down:
+¡Hay mucha información aquí! Analicémosla:
 
-- `version`: The version number for the Level data file format. Leave this at `1.0.0`.
-- `name`: The readable name for the Level, as displayed at the top right of the Story Menu.
-- `titleAsset`: The asset to use for the level name in the list of level, relative to the `images` folder in your mod folder.
-- `background`: The background to use for the level. `#F9CF51` is the classic yellow, but this field takes either a color code OR an image file path (relative to the `images` folder in your mod folder).
-- `songs`: A list of song IDs to include in the week.
-- `visible`: Whether this story level is visible in the Story Menu.
-- `props`: Data for the props to display on the Story Menu when the level is selected. For example, Week 1 will display Daddy Dearest, Boyfriend, and Girlfriend.
+- `version`: El número de versión del formato del archivo de datos del nivel. Déjalo en `1.0.0`.
+- `name`: El nombre legible del nivel, tal y como se muestra en la parte superior derecha del menú de la historia.
+- `titleAsset`: El recurso que se utilizará para el nombre del nivel en la lista de niveles, relativo a la carpeta `images` de tu carpeta de mods.
+- `background`: El fondo que se utilizará para el nivel. `#F9CF51` es el amarillo clásico, pero este campo admite tanto un código de color como la ruta de un archivo de imagen (relativa a la carpeta `images` dentro de tu carpeta de mods).
+- `songs`: Una lista de ID de canciones que se incluirán en la semana.
+- `visible`: Indica si este nivel de la historia es visible en el menú de la historia.
+- `props`: Datos de los elementos que se mostrarán en el menú de la historia cuando se seleccione el nivel. Por ejemplo, la Semana 1 (Week 1) mostrará «Daddy Dearest», «Boyfriend» y «Girlfriend».
 
-When the game starts, it queries the list of available levels by looking in the `data/levels` folder for JSON files, which it then uses to populate the Story Menu, and then the Freeplay Menu (in non-alphabetical views, songs in Freeplay appear in order by what level they are included in).
+Cuando el juego se inicia, consulta la lista de niveles disponibles buscando archivos JSON en la carpeta `data/levels`, que luego utiliza para rellenar el menú de la historia y, a continuación, el menú de juego libre (en las vistas no alfabéticas, las canciones del juego libre aparecen ordenadas según el nivel en el que están incluidas).
 
-If you want your custom song to only show up in Freeplay, you can just create a custom week and set the `visible` property to false, and the songs will show up in Freeplay!
+Si quieres que tu canción personalizada solo aparezca en Juego libre, solo tienes que crear una semana personalizada y establecer la propiedad «visible» en false, ¡y las canciones aparecerán en Freeplay!
